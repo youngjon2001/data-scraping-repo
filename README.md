@@ -1,6 +1,6 @@
  data-scraping-repo
 template to scrape data
-''''import requests
+```import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import time
@@ -15,7 +15,7 @@ page = requests.get(url, headers=headers)
 time.sleep(1)
 
 soup = BeautifulSoup(page.text, "html.parser")
-'''
+```
 
  Correct table extraction
 table = soup.find("table")
