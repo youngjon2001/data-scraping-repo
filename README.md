@@ -15,11 +15,11 @@ page = requests.get(url, headers=headers)
 time.sleep(1)
 
 soup = BeautifulSoup(page.text, "html.parser")
-```
 
- Correct table extraction
+### Correct table extraction
 table = soup.find("table")
 
 df = pd.read_html(str(table))[0]
+```
 
 print(df.head())
