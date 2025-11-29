@@ -20,6 +20,6 @@ soup = BeautifulSoup(page.text, "html.parser")
 table = soup.find("table")
 
 df = pd.read_html(str(table))[0]
-```
 
 print(df.head())
+```
